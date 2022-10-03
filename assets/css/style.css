@@ -190,6 +190,11 @@ section {
   padding: 20px;
 }
 
+.email a {
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
   .services-section {
     margin-top: 80px;
