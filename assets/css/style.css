@@ -44,7 +44,7 @@ body {
 
 .h-caption {
   padding-top: 180px;
-  font-size: 3.5em;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 
@@ -177,6 +177,7 @@ section {
 }
 
 #footer {
+  margin-top: 70px;
   border-top: 1px solid rgba(0, 0, 0, 7%);
 }
 
@@ -187,4 +188,14 @@ section {
 
 #footer .content-left {
   padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .services-section {
+    margin-top: 80px;
+  }
+
+  .box {
+    width: 100%;
+  }
 }
