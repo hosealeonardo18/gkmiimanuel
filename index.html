@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
@@ -26,10 +25,11 @@
     <title>GKMI Imanuel</title>
   </head>
   <body>
+    <!-- Navigasi bar -->
     <header id="home">
       <nav class="navbar navbar-expand-lg bg-white">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="assets/images/logo-gkmi.png" alt="" height="60px" /></a>
+          <a class="navbar-brand" href="#"><img src="assets/images/logo-gkmi.png" alt="" height="55px" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -62,31 +62,40 @@
           </div>
         </div>
       </nav>
+      <!-- end Navigasi Bar -->
 
+      <!-- start Hero section -->
       <div class="hero-section">
-        <div class="container-fluid">
+        <div class="container-fluid align-items-center">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-5 col-md-4 d-flex align-items-center">
-                <div class="hero-caption">
-                  <h1 class="h-caption mt-5">Solideo Gloria</h1>
+            <div class="row py-5">
+              <div class="col-lg-6 col-xl-5 col-md-6" >
+                <div class="hero-caption mt-lg-5 py-lg-5 py-sm-3">
+                  <h1 class="h-caption">Solideo Gloria</h1>
                   <p class="caption">Selamat datang di website Gereja GKMI Imanuel mari beribadah Bersama kami</p>
 
-                  <a class="button-detail mt-5 fw-semibold" href="#services">Jadwal Ibadah</a>
-                  <a class="button-contact ms-2 mb-2 fw-semibold" href="#contact">Contact Us</a>
+                  <div class="wrapper-button mt-5 py-2">
+                    <a class="button-detail fw-semibold me-2" href="#jadwal">Jadwal Ibadah</a>
+
+                    <a class="button-contact fw-semibold" href="#contact">Contact Us</a>
+                  </div>
                 </div>
               </div>
 
-              <div class="col-lg-6 col-xs-12 offset-lg-1">
-                <div class="box-image">
-                  <div class="image-hero"></div>
+              <div class="col-lg-6 col-md-6 offset-xl-1" >
+                <div class="card-image">
+                  <div class="image-hero">
+                    <img class="img-fluid" src="assets/images/hero-section.JPG" alt="gkmiimanuel" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- end hero section -->
     </header>
+    <!-- end Header -->
 
     <main>
       <!-- Start Section About -->
@@ -128,17 +137,15 @@
 
       <!-- Section Services -->
       <section id="services">
-        <div class="services-section mb-5 text-center">
-          <div class="container-fluid">
+          <div class="container-fluid py-lg-3">
             <div class="container">
               <div class="row">
-                <div class="col-12">
+                <div class="col-lg-12">
                   <h1 class="heading">Services</h1>
-                  <div class="videowrapper">
-                    <iframe
-                      class="mt-5"
-                      width="1000"
-                      height="660"
+                  <div class="videowrapper mt-5">
+                    <iframe 
+                      width="1022"
+                      height="500"
                       src="https://www.youtube.com/embed/peyu469eUPU"
                       title="YouTube video player"
                       frameborder="0"
@@ -149,102 +156,141 @@
                 </div>
               </div>
 
-              <div class="ibadah-raya mt-5">
+              <div id="jadwal" class="ibadah-raya mt-5">
                 <div class="container">
                   <div class="row">
                     <!-- Umum -->
-                    <div class="col-lg-3 col-md-2">
-                      <div class="box mt-5">
-                        <div class="box-body text-start">
-                          <h1 class="box-title fw-bolder text-center">Ibadah Raya Umum</h1>
+                    <div class="col-lg-6 col-xl-4 col-md-6 pt-md-3 pt-lg-4">
+                      <div class="wrapper-card p-3">
+                        <div class="card-body text-center">
+                          <h1 class="card-title fw-bolder text-center">Ibadah Raya Umum</h1>
 
-                          <h3 class="box-subtitle text-start mt-5 fw-bold">Onsite</h3>
-                          <p class="text-start">Minggu | 09:00 WIB - Selesai</p>
+                          <h3 class="card-subtitle fw-bold">Onsite</h3>
 
-                          <h3 class="box-subtitle text-start mt-5 fw-bold">Online</h3>
-                          <p class="text-start">Minggu | 09:00 WIB - Selesai</p>
+                          <div class="wrapper-content">
+                            <span class="card-marker fw-semibold mt-5">Minggu</span>
+                            <p class="card-caption">09:00 WIB - Selesai</p>
+                          </div>
 
-                          <p class="text-start fw-semibold">Live Streaming</p>
-                          <a class="button-box link-youtube" target="_blank" href="https://www.youtube.com/channel/UC_29coeowbhK6JVj4hVeLmA"><i class="fa-brands fa-youtube"></i> GKMI IMANUEL Cipayung</a>
-                        </div>
-                      </div>
-                    </div>
+                          
+                          <h3 class="card-subtitle fw-bold">Online</h3>
 
-                    <!-- Anak -->
-                    <div class="col-lg-3 col-md-4">
-                      <div class="box mt-5">
-                        <div class="box-body text-start">
-                          <h1 class="box-title fw-bolder text-center">Ibadah Komisi Anak</h1>
-
-                          <h3 class="box-subtitle text-start mt-5 fw-bold">Onsite</h3>
-                          <p class="text-start">Minggu | 07:30 WIB - Selesai</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Komisi Remaja -->
-                    <div class="col-lg-3 col-md-4">
-                      <div class="box mt-5">
-                        <div class="box-body text-start">
-                          <h1 class="box-title fw-bolder text-center">Ibadah Komisi Remaja</h1>
-
-                          <h3 class="box-subtitle text-start mt-5 fw-bold">Onsite</h3>
-                          <p class="text-start">Minggu | 07:00 WIB - Selesai</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- komisi Pemuda -->
-                    <div class="col-lg-3 col-md-4">
-                      <div class="box mt-5">
-                        <div class="box-body text-start">
-                          <h1 class="box-title fw-bolder text-center">Ibadah Komisi Pemuda</h1>
-
-                          <h3 class="box-subtitle text-start mt-5 fw-bold">Onsite</h3>
-                          <p class="text-start">Minggu | 16:00 WIB - Selesai</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Komisi Bapak -->
-                    <div class="col-lg-3">
-                      <div class="box mt-5">
-                        <div class="box-body text-start">
-                          <h1 class="box-title fw-bolder text-center">Ibadah Komisi Bapak</h1>
-
-                          <h3 class="box-subtitle text-start mt-5 fw-bold">Onsite</h3>
-                          <p class="text-start">Minggu | 18:00 WIB - Selesai</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Komisi Perempuan -->
-                    <div class="col-lg-3">
-                      <div class="box mt-5">
-                        <div class="box-body text-start">
-                          <h1 class="box-title fw-bolder text-center">Ibadah Komisi Perempuan</h1>
-
-                          <h3 class="box-subtitle text-start mt-5 fw-bold">Onsite</h3>
-                          <p class="text-start">Minggu | 11:00 WIB - Selesai</p>
-
-                          <p class="text-start fw-semibold fst-italic">Note : Minggu ke 2</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                      <div class="box mt-5">
-                        <div class="box-body text-start">
-                          <h1 class="box-title fw-bolder text-center">Ibadah Komisi Lansia</h1>
-
-                          <h3 class="box-subtitle text-start mt-5 fw-bold">Onsite</h3>
-                          <p class="text-start">Minggu | 11:00 WIB - Selesai</p>
-
-                          <p class="text-start fw-semibold fst-italic">Note : Minggu ke 1 & 4</p>
+                          <div class="wrapper-content">
+                            <span class="card-marker fw-semibold mt-5">Minggu</span>
+                            <p class="card-caption">09:00 WIB - Selesai</p>
+                            <p class="card-marker fw-semibold">Live Streaming</p>
+                          </div>
+                          
+                          
+                          <a class="button-card link-youtube" target="_blank" href="https://www.youtube.com/channel/UC_29coeowbhK6JVj4hVeLmA"><i class="fa-brands fa-youtube"></i> GKMI IMANUEL Cipayung</a>
                         </div>
                       </div>
                     </div>
                     <!-- End -->
+
+                     <!-- Komisi anak -->
+                     <div class="col-lg-6 col-xl-4 col-md-6 pt-md-3 pt-lg-4">
+                      <div class="wrapper-card p-3">
+                        <div class="card-body text-center">
+                          <h1 class="card-title fw-bolder text-center">Ibadah Komisi Anak</h1>
+
+                          <h3 class="card-subtitle fw-bold">Onsite</h3>
+
+                          <div class="wrapper-content">
+                            <span class="card-marker fw-semibold mt-5">Minggu</span>
+                            <p class="card-caption">07:30 WIB - Selesai</p>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                     <!-- End -->
+
+                     <!-- Komisi Remaja -->
+                     <div class="col-lg-6 col-xl-4 col-md-6 pt-md-3 pt-lg-4">
+                      <div class="wrapper-card p-3">
+                        <div class="card-body text-center">
+                          <h1 class="card-title fw-bolder text-center">Ibadah Komisi Remaja</h1>
+
+                          <h3 class="card-subtitle fw-bold">Onsite</h3>
+
+                          <div class="wrapper-content">
+                            <span class="card-marker fw-semibold mt-5">Minggu</span>
+                            <p class="card-caption">07:30 WIB - Selesai</p>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                     <!-- End -->
+
+                      <!-- Komisi Pemuda -->
+                      <div class="col-lg-6 col-xl-4 col-md-6 pt-md-3 pt-lg-4">
+                        <div class="wrapper-card p-3">
+                          <div class="card-body text-center">
+                            <h1 class="card-title fw-bolder text-center">Ibadah Komisi Pemuda</h1>
+  
+                            <h3 class="card-subtitle fw-bold">Onsite</h3>
+  
+                            <div class="wrapper-content">
+                              <span class="card-marker fw-semibold mt-5">Minggu</span>
+                              <p class="card-caption">16:00 WIB - Selesai</p>
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+                       <!-- End -->
+
+                        <!-- Komisi Bapak -->
+                     <div class="col-lg-6 col-xl-4 col-md-6 pt-md-3 pt-lg-4">
+                      <div class="wrapper-card p-3">
+                        <div class="card-body text-center">
+                          <h1 class="card-title fw-bolder text-center">Ibadah Komisi Bapak</h1>
+
+                          <h3 class="card-subtitle fw-bold">Onsite</h3>
+
+                          <div class="wrapper-content">
+                            <span class="card-marker fw-semibold mt-5">Minggu</span>
+                            <p class="card-caption">18:00 WIB - Selesai</p>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                     <!-- End -->
+
+                      <!-- Komisi Perempuan -->
+                      <div class="col-lg-6 col-xl-4 col-md-6 pt-md-3 pt-lg-4">
+                        <div class="wrapper-card p-3">
+                          <div class="card-body text-center">
+                            <h1 class="card-title fw-bolder text-center">Ibadah Komisi Perempuan</h1>
+  
+                            <h3 class="card-subtitle fw-bold">Onsite</h3>
+  
+                            <div class="wrapper-content">
+                              <span class="card-marker fw-semibold mt-5">Minggu</span>
+                              <p class="card-caption">11.00 WIB - Selesai</p>
+                              <p class="card-marker fw-semibold fst-italic">Minggu ke 2</p>
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+                       <!-- End -->
+
+                       <!-- Komisi Lansia -->
+                      <div class="col-lg-6 col-xl-4 col-md-6 pt-md-3 pt-lg-4">
+                        <div class="wrapper-card p-3">
+                          <div class="card-body text-center">
+                            <h1 class="card-title fw-bolder text-center">Ibadah Komisi Lansia</h1>
+  
+                            <h3 class="card-subtitle fw-bold">Onsite</h3>
+  
+                            <div class="wrapper-content">
+                              <span class="card-marker fw-semibold mt-5">Minggu</span>
+                              <p class="card-caption">11.00 WIB - Selesai</p>
+                              <!-- <p class="card-marker fw-semibold fst-italic">Live Streaming</p> -->
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+                       <!-- End -->
                   </div>
                 </div>
               </div>
@@ -256,17 +302,17 @@
 
       <!-- start Section Contact -->
       <section id="contact">
-        <div class="section-contact mb-5">
+        <div class="section-contact mb-5 py-lg-3">
           <div class="container-fluid">
             <div class="container">
               <div class="row align-items-center">
                 <p class="heading">Contact US</p>
 
-                <div class="col-lg-7">
+                <div class="col-lg-8 col-xl-7">
                   <div class="contact-maps">
                     <div class="videowrapper">
                       <iframe
-                        class="mt-5"
+                        class="mt-5 "
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.444907238748!2d106.89002921472073!3d-6.336370763760588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed20f24929ad%3A0x5322df12ee338000!2sGereja%20Gkmi%20Imanuel!5e0!3m2!1sen!2sid!4v1664794037054!5m2!1sen!2sid"
                         width="600"
                         height="450"
@@ -279,22 +325,22 @@
                   </div>
                 </div>
 
-                <div class="col-lg-5">
+                <div class="col-lg-4 col-xl-5">
                   <div class="contact-us dmt-3 align-middle">
                     <div class="location">
                       <i class="fa-solid fa-map-location-dot"></i>
-                      <p>Jl. Damai PBSI No.12, RT.12/RW.1, Cipayung, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13840</p>
+                      <p class="subject-contact">Jl. Damai PBSI No.12, RT.12/RW.1, Cipayung, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13840</p>
                     </div>
 
                     <div class="contact">
                       <i class="fa-solid fa-phone-volume"></i>
-                      <p>(021) 8445060</p>
+                      <p class="subject-contact">(021) 8445060</p>
                     </div>
 
                     <div class="email">
                       <a href="mailto:info@gkmiimanuel.org">
                         <i class="fa-solid fa-envelope"></i>
-                        <p>info@gkmiimanuel.org</p>
+                        <p class="subject-contact">info@gkmiimanuel.org</p>
                       </a>
                     </div>
                   </div>
@@ -306,29 +352,68 @@
       </section>
     </main>
 
-    <footer id="footer" class="mt-5">
+    <footer id="footer" >
       <div class="container-fluid">
         <div class="container">
           <div class="row">
             <div class="col-lg-4">
               <div class="content-left">
-                <h4 class="text-title">Sosial Media</h4>
-                <div class="body-left mt-3">
-                  <a href=""><i class="fa-brands fa-youtube text-danger w-30"></i> GKMI IMANUEL Cipayung</a>
+                <h4 class="text-title fw-bolder text-danger">Social Media</h4>
+               
+                <div class="body-left mt-4">
+                  <a href="https://www.youtube.com/channel/UC_29coeowbhK6JVj4hVeLmA" target="_blank"><img src="assets/images/logo-youtube.png" alt="youtube" ></a>
+
+                  <a href="https://www.facebook.com/profile.php?id=100073822470589" target="_blank"><img src="assets/images/logo-facebook.png" alt="facebook" ></a>
+
+                  <a href="https://www.instagram.com/imanuel.gkmi/?hl=id" target="_blank"><img src="assets/images/logo-ig.png" alt="instagram" ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="content-left">
+                <h4 class="text-title fw-bolder text-danger">Services</h4>
+               
+                <div class="body-left mt-4">
+                  <a href=""><p class="text-items">Ibadah Raya Umum</p></a>
+                  <a href=""><p class="text-items">Ibadah Komisi Anak</p></a>
+                  <a href=""><p class="text-items">Ibadah Komisi Remaja</p></a>
+                  <a href=""><p class="text-items">Ibadah Komisi Pemuda</p></a>
+                  <a href=""><p class="text-items">Ibadah Komisi Perempuan</p></a>
+                  <a href=""><p class="text-items">Ibadah Komisi Bapak</p></a>
+                  <a href=""><p class="text-items">Ibadah Komisi Komisi Lansia</p></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="content-left">
+                <h4 class="text-title fw-bolder text-danger">Ministry</h4>
+               
+                <div class="body-left mt-4">
+                  <a href=""><p class="text-items">Penyerahan Anak</p></a>
+                  <a href=""><p class="text-items">Baptis Dewasa</p></a>
+                  <a href=""><p class="text-items">Pemberkatan Nikah</p></a>
+                  <a href=""><p class="text-items">Pelayanan Kedukaan</p></a>
+                  <a href=""><p class="text-items">Pelayanan Konseling</p></a>
+                  
                 </div>
               </div>
             </div>
           </div>
+          
 
           <div class="row">
             <div class="col">
               <div class="copyright ps-4">
-                <p class="mt-2">Copyright &copy; <span class="fw-bolder">GKMI Imanuel 2022</span>. All Rights Reserved</p>
+                <p class="footer-text mt-2 text-center">Copyright &copy; <span class="fw-bolder">GKMI IMANUEL 2022</span>. All Rights Reserved</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
   </body>
 </html>
