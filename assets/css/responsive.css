@@ -11,14 +11,29 @@
     width: 330px;
   }
 
+  .image-hero img {
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    width: 100%;
+  }
+
   .button-contact {
     margin-top: 20px;
   }
 }
 
-@media screen and (max-width: 576px) {
-  .image-hero {
+@media screen and (max-width: 768px) {
+  .image-hero img {
     background-size: cover;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .image-hero img {
+    background-size: cover;
+    width: 100%;
   }
   .navbar-collapse {
     background-color: white;
@@ -49,5 +64,13 @@
 
   .subject-contact {
     font-size: 0.875em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .image-hero img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
   }
 }
