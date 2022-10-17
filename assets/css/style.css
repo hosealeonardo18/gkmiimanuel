@@ -16,18 +16,20 @@ body {
   color: #313131;
   font-weight: 500;
   font-size: 1em;
+  text-align: center;
 }
 
 .nav-item a:hover {
   background-color: #ff3333;
   color: white;
+  text-align: center;
 }
 /* end Navbar */
 
 /* section hero */
 
 .hero-section .container-fluid {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .h-caption {
