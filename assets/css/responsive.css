@@ -1,76 +1,61 @@
-/* responsive */
-
-@media screen and (max-width: 991px) {
-  .navbar-collapse {
-    background-color: white;
-    margin-top: 10px;
-    padding: 20px;
-  }
-
-  .wrapper-card {
-    width: 330px;
-  }
-
-  .image-hero img {
-    background-size: cover;
-    background-repeat: none;
-    background-position: center;
-    width: 100%;
-  }
-
-  .button-contact {
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .image-hero img {
-    background-size: cover;
-    width: 100%;
-  }
+@media screen and (max-width: 375px) {
+    
 }
 
 @media screen and (max-width: 576px) {
-  .image-hero img {
-    background-size: cover;
-    width: 100%;
-  }
-  .navbar-collapse {
-    background-color: white;
-    padding: 20px;
-  }
+    #hero-section .title {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    #hero-section .sub-title {
+        font-size: 14px;
+    }
 
-  .hero-section {
-    display: flex;
-  }
-  .hero-caption {
-    margin-top: -40px;
-    margin-bottom: 50px;
-    order: 2;
-  }
+    #hero-section .social-media {
+        margin-top: 60px;
+    }
 
-  .h-caption {
-    font-size: 2.188em;
-  }
+    #hero-section .social-media img{
+        width: 26px;
+    }
 
-  .wrapper-card {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+    #hero-section .row :nth-child(1) {
+        order:2;
+   }
 
-  .heading {
-    font-size: 1.625em;
-  }
+   #hero-section .row .columnSatu {
+        padding-top: -100px;
+   }
 
-  .subject-contact {
-    font-size: 0.875em;
-  }
 }
 
-@media screen and (max-width: 375px) {
-  .image-hero img {
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-  }
+@media screen and (max-width: 768px) {
+    #hero-section .title {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    #hero-section .sub-title {
+        font-size: 14px;
+    }
+
+    #hero-section .social-media {
+        margin-top: 60px;
+    }
+
+    #hero-section .social-media img{
+        width: 26px;
+    }
+
+    #hero-section .row :nth-child(1) {
+        order:2;
+   }
+
+   #hero-section .row .columnSatu {
+        padding-top: -100px;
+   }
+
+}
+
+@media screen and (max-width: 991px) {
+
 }
